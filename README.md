@@ -14,12 +14,13 @@ This project uses advanced honeypots to simulate vulnerable systems, attracting 
 
 🎯 Objectives
 
-🚀 Deploy Realistic Honeypots: Utilize Dionaea, Cowrie, and Honeyd to simulate real-world systems and capture advanced attack patterns.
+🚀 Deploy Realistic Honeypots: we Use  Dionaea, Cowrie, and Honeyd to simulate real-world systems and capture advanced attack patterns.
 🧩 Isolate Attackers Safely: Securely isolate the honeypots from critical network components to prevent breaches.
-🔐 Reinforce Security Layers: Implement Seccomp, AppArmor, and SELinux to contain and control any malicious activities.
+🔐 Reinforce Security Layers: Implement Seccomp, AppArmor,  to contain and control any malicious activities.
 📊 Visualize and Analyze Data: Integrate collected logs into the ELK Stack (Elasticsearch, Logstash, Kibana) for dynamic data visualization and detailed threat analysis.
 
 ⚙️ Key Features
+
 Dionaea: Captures malware by emulating vulnerable services, enabling detailed exploit analysis.
 Cowrie: Interactive SSH/Telnet honeypot that logs attacker activities and keystrokes.
 Honeyd: Simulates entire networks, including multiple operating systems, to lure a diverse range of attackers.
