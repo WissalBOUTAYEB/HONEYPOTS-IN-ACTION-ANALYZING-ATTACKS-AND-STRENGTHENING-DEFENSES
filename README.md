@@ -1,82 +1,66 @@
 🛡️ Honeypot Project: Simulating Cyber Attacks
+https://img.shields.io/badge/Architecture-High--Interaction-orange
+https://img.shields.io/badge/Python-3.8%252B-blue
+https://img.shields.io/badge/Containerized-Docker-green
+https://img.shields.io/badge/Visualization-ELK-yellow
+
+A comprehensive high-interaction honeypot system designed to simulate real-world cyber attacks in a controlled environment. This project captures, analyzes, and visualizes attacker behavior to strengthen cybersecurity defenses and improve threat intelligence.
+
+📋 Table of Contents
 Overview
 
-This project focuses on building and deploying high-interaction honeypots to simulate real-world cyber attacks in a controlled environment.
-By monitoring attacker interactions, it provides actionable insights into attack patterns, exploited vulnerabilities, and malicious techniques — helping strengthen cyber defense strategies and improve incident response capabilities.
+Features
 
-Why This Project Matters
+Architecture
 
-Modern cyber threats are becoming more complex and adaptive, making it essential to understand attacker behavior before they reach production systems.
-This project demonstrates how deception-based technologies, such as honeypots, can be used to:
+Installation
 
-🎯 Detect and record malicious activities in real time.
+Configuration
 
-🕵️‍♀️ Reveal attacker tools, methods, and objectives.
+Usage
 
-🔐 Strengthen network defenses through data-driven insights.
+Data Analysis
 
-📊 Enhance cybersecurity awareness by transforming real attack data into intelligence.
+Results
 
-Technical Architecture
+Contributing
 
-The honeypot environment combines three specialized systems with a centralized monitoring and visualization stack:
+Security Considerations
 
-Dionaea: Emulates vulnerable network services (SMB, HTTP, FTP) to capture malware samples and exploit attempts.
+License
 
-Cowrie: Provides an interactive SSH/Telnet environment to record attacker sessions, commands, and credentials.
+🎯 Overview
+This project addresses the growing complexity of modern cyber threats by deploying deceptive honeypot systems that:
 
-Honeyd: Simulates a complete virtual network with multiple operating systems to attract a wide range of attackers.
+Detect and record malicious activities in real-time
 
-Seccomp & AppArmor: Apply sandboxing and access control policies to isolate and contain malicious behaviors.
+Analyze attacker tools, methods, and objectives
 
-ELK Stack (Elasticsearch, Logstash, Kibana): Collects logs from all honeypots, enabling real-time analytics and data visualization.
+Strengthen network defenses through data-driven insights
 
-Objectives
+Enhance cybersecurity awareness with actionable intelligence
 
-Deploy Realistic Honeypots: Emulate production-like systems to collect authentic attack data.
+Why Honeypots Matter
+"Know thy enemy" - Honeypots provide a safe window into the minds and methods of attackers, allowing security teams to understand emerging threats before they impact production systems.
 
-Ensure Network Isolation: Design a segmented environment to prevent attacker movement or compromise.
+✨ Features
+🎣 Attack Capture
+Dionaea: Low-interaction honeypot capturing malware samples via SMB, HTTP, FTP
 
-Analyze Attacker Behavior: Classify and interpret captured activity for deeper incident analysis.
+Cowrie: Medium-interaction SSH/Telnet honeypot recording attacker sessions
 
-Visualize Security Metrics: Build dynamic dashboards to identify threats, trends, and anomalies.
+Honeyd: Network-level deception creating virtual operating systems
 
-Enhance Threat Intelligence: Leverage findings to improve detection rules and defensive strategies.
+🔒 Security & Isolation
+Seccomp & AppArmor: Sandboxing and access control policies
 
-Data Analysis and Visualization
+Network Segmentation: Complete isolation from production systems
 
-Collected data is processed and visualized through Kibana dashboards, providing rich analytical perspectives:
+Containerization: Docker-based deployment for easy management
 
-Attack Trends: Frequency, source, and target of attacks by protocol and service.
+📊 Analytics & Visualization
+ELK Stack: Centralized logging, analysis, and visualization
 
-Credential Attempts: Common usernames and passwords used during intrusion attempts.
+Real-time Dashboards: Live attack monitoring and trend analysis
 
-Command Execution Traces: Step-by-step view of attacker activities during sessions.
-
-Malware Samples: Catalog of captured malicious payloads and their sources.
-
-These insights contribute to real-world threat intelligence and help continuously strengthen defensive measures.
-
-Results and Impact
-
-Through continuous monitoring and log correlation, the honeypot project achieved:
-
-✅ Real-time visibility into active attack attempts and intrusion methods.
-
-🧩 Identification of frequent exploit vectors targeting vulnerable services.
-
-🔍 Hands-on experience in system hardening, threat hunting, and forensic analysis.
-
-🧠 Practical understanding of offensive tactics and defensive countermeasures.
-
-🚀 A strong foundation for integration with SIEM platforms (e.g., Wazuh, Splunk) to automate detection and alerting.
-
-Future Improvements
-
-Integrate with Wazuh for advanced threat correlation and automated alerts.
-
-Use machine learning for anomaly and pattern detection in attack data.
-
-Deploy honeypots via Docker or Ansible for better scalability and portability.
-
-Conduct deeper malware analysis on captured payloads to expand the threat database.
+Threat Intelligence: Automated correlation and pattern recognition
